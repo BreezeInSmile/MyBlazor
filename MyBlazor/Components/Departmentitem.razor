@@ -1,0 +1,16 @@
+﻿<tr>
+    <td>@department.Name</td>
+    <td>@department.Location</td>
+    <td>@department.EmployeeCount</td>
+
+    <td>
+        <a href="employee/@(department.Id)">
+            Employees
+        </a>
+    </td>
+</tr>
+
+@code{
+    [Parameter]
+    public Department department { get; set; }
+}
