@@ -16,7 +16,7 @@
     [Parameter]
     public Employee employee { get; set; }
 
-    private async void HandleFire()
+    private async Task HandleFire()
     {
         await _employeeService.Fired(employee.Id);
     }
